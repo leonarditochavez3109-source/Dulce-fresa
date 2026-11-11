@@ -1,0 +1,192 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff5f8;
+    color: #542536;
+}
+
+/* BARRA DE NAVEGACIÓN */
+header {
+    background: #b51245;
+    padding: 18px 7%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav h2 {
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd6e3;
+}
+
+/* PORTADA */
+.portada {
+    min-height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ffd6e3, #f7a9c4);
+    padding: 60px 20px;
+}
+
+.portada h1 {
+    color: #a10d3d;
+    font-size: 38px;
+    margin-bottom: 15px;
+    animation: aparecer 1s ease;
+}
+
+.portada p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* BOTONES */
+.boton,
+.pedido {
+    display: inline-block;
+    background: #b51245;
+    color: white;
+    text-decoration: none;
+    padding: 14px 24px;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.boton:hover,
+.pedido:hover {
+    background: #7e092e;
+    transform: scale(1.05);
+}
+
+/* SECCIONES */
+section {
+    padding: 50px 18px;
+    text-align: center;
+}
+
+section h2 {
+    color: #b51245;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+/* PRODUCTO */
+.producto {
+    background: white;
+    max-width: 380px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 22px;
+    box-shadow: 0 8px 25px #e5a9bd;
+    transition: 0.3s;
+    animation: aparecer 1s ease;
+}
+
+.producto:hover {
+    transform: translateY(-8px);
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 15px;
+    margin: 15px 0;
+}
+
+.producto h3 {
+    color: #b51245;
+    font-size: 23px;
+    margin: 15px 0;
+}
+
+.producto p {
+    line-height: 1.6;
+}
+
+.producto h4 {
+    color: #b51245;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+/* VIDEO */
+video {
+    max-width: 650px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px #e5a9bd;
+}
+
+/* SOBRE NOSOTROS */
+.nosotros {
+    background: #ffe0ea;
+    line-height: 1.8;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    background: #a10d3d;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    line-height: 1.8;
+}
+
+/* ANIMACIÓN */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* CELULARES */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    .portada h1 {
+        font-size: 30px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+}
+
